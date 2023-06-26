@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---StyleSheet--->
+    <link rel = "stylesheet" href="styles.css">
+    <!---Global font links--->
+    <link rel="preconnect" href="https://fonts.google.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!---font Awesome Link --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div class="accordion">
+        <h2 class="accordion-title">Frequently Asked Questions</h2>
+        <div class="content-container">
+            <div class="question">
+                What the difference between background:
+                no-repeat center center; and background-size: cover; ?
+            </div>
+            <div class="answer">
+                background: no-repeat centre centre; is saying place a background image in the element, but only
+                show one instance of it (no-repeat), try looking at the background-repeat property to see other options.
+                The CSS then says place the image in the vertical centre, and horizontal centre of the element.
+                This is related to the background-position property. It might be worth you're trying to reduce the
+                image size to something small 10px x 10px to see the effect of no-repeat, vs repeat-x, repeat-y and repeat.
+                background-size: declares how big you want the background image to be
+                (this allows dynamic resizing of the image much like height and width in the html img tag),
+                this is a property introduced in CSS3.
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="question">
+                What is &times("& times") in css
+            </div>
+            <div class="answer">
+                The &times is an HTML entity that represents the multiplication sign (×) in HTML.
+                It is not a CSS property. If you want to use the multiplication sign in CSS,
+                you can use the Unicode character U+00D7 which represents the multiplication sign.
+                You can use it like this: content: '\00D7';
+            </div>
+        </div>
+    </div>
+<!--Scripts-->
+<script src="project-3.js"></script>
+</body>
+</html>
